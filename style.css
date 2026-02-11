@@ -521,3 +521,171 @@ body.light-mode .form-control {
     color: var(--accent-color);
     transform: translateY(-3px);
 }
+
+/* --- About Page Specific Styles --- */
+
+.about-hero {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: radial-gradient(circle at top center, rgba(0, 204, 255, 0.15) 0%, transparent 70%);
+}
+
+.about-intro-text {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.highlight-text {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Mission Section */
+.mission-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0;
+}
+
+.mission-content {
+    flex: 1;
+}
+
+.mission-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-icon {
+    font-size: 15rem;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-alt));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 10px 20px rgba(0, 255, 136, 0.3));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Stats Grid */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.stat-item p {
+    font-size: 1rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* CEO Section */
+.ceo-section {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.02), transparent);
+    border-left: 4px solid var(--accent-color);
+    padding: 60px;
+    margin: 100px 0;
+}
+
+.ceo-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ceo-name span {
+    color: var(--accent-color);
+}
+
+.ceo-quote {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Values & Approach Grids */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: left;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-alt);
+    box-shadow: 0 10px 30px rgba(0, 204, 255, 0.1);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 25px;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.value-highlight {
+    color: var(--accent-alt);
+}
+
+@media (max-width: 768px) {
+    .mission-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ceo-section {
+        padding: 40px;
+    }
+
+    .ceo-name {
+        font-size: 2.5rem;
+    }
+}
