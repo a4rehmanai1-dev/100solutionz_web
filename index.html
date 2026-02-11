@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100Solutionz | Connecting Brands with People</title>
+    <title>100Solutionz | Intelligent AI & Digital Innovation</title>
+    <meta name="description"
+        content="100Solutionz empowers brands with AI Chatbots, Model Training, and Digital Growth strategies. Future-proof your business with our intelligent solutions.">
+    <meta property="og:title" content="100Solutionz | Intelligent AI & Digital Innovation">
+    <meta property="og:description"
+        content="Empowering enterprises with intelligent solutions: From AI Chatbots to High-Performance Apps.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 
 <body>
@@ -57,7 +64,7 @@
                 </div>
                 <div class="work-grid">
                     <div class="work-item" onclick="location.href='work.html'">
-                        <div class="work-img"
+                        <div class="work-img" loading="lazy"
                             style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2071&auto=format&fit=crop');">
                         </div>
                         <div class="work-info">
@@ -110,12 +117,21 @@
                 <a href="contact.html" class="btn-large">Start a Project</a>
             </div>
             <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/100solutionzz/" target="_blank" class="social-icon"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
                 <p>&copy; 2026 100Solutionz. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="config.js"></script>
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 
 </html>

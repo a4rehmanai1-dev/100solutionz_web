@@ -4,80 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | 100Solutionz</title>
+    <title>Contact Us | Let's Build the Future | 100Solutionz</title>
+    <meta name="description"
+        content="Ready to start your next project? Contact 100Solutionz today for AI solutions, app development, and digital growth.">
+    <meta property="og:title" content="Contact Us | Let's Build the Future | 100Solutionz">
+    <meta property="og:description" content="Ready to start your next project? Drop us a message below.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-    <style>
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--accent-color);
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            color: var(--text-color);
-            font-family: inherit;
-            font-size: 16px;
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        textarea.form-control {
-            height: 150px;
-            resize: vertical;
-        }
-
-        .btn-submit {
-            width: 100%;
-            background: var(--accent-color);
-            color: var(--bg-color);
-            border: none;
-            padding: 18px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-submit:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 30px rgba(255, 180, 0, 0.3);
-        }
-
-        body.light-mode .form-control {
-            background: rgba(0, 0, 0, 0.03);
-            border-color: rgba(0, 0, 0, 0.1);
-            color: #121212;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -133,14 +69,26 @@
         </section>
     </main>
 
-    <footer style="background: #000; padding: 50px 0; text-align: center;">
+    <footer id="contact">
         <div class="container">
-            <div class="footer-bottom" style="margin-top: 0; padding-top: 0; border-top: none;">
+            <div class="footer-cta">
+                <h2>Ready to build the future?</h2>
+                <a href="contact.html" class="btn-large">Start a Project</a>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/100solutionzz/" target="_blank" class="social-icon"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
                 <p>&copy; 2026 100Solutionz. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 

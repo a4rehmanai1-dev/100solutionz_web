@@ -309,6 +309,7 @@ body::before {
     font-size: 44px;
     background: linear-gradient(45deg, var(--accent-color), var(--accent-alt));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 30px;
     display: block;
@@ -325,6 +326,35 @@ body::before {
     opacity: 0.6;
     line-height: 1.7;
 }
+
+/* Service List Cards */
+.service-list-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: var(--glass);
+    transition: var(--transition);
+}
+
+.service-list-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-list-card ul li {
+    font-size: 16px;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.service-list-card ul li:hover {
+    opacity: 1;
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
 
 /* Footer Section */
 #contact {
@@ -367,6 +397,17 @@ body::before {
     opacity: 0.4;
     font-size: 13px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
 }
 
 /* Themes */
@@ -392,4 +433,91 @@ body.light-mode .work-info {
 
 body.light-mode #contact {
     background: #f9f9f9;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+textarea.form-control {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 18px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-submit:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+}
+
+body.light-mode .form-control {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #121212;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: var(--text-color);
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    opacity: 1;
+    color: var(--accent-color);
+    transform: translateY(-3px);
 }

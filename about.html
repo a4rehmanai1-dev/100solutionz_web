@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | 100Solutionz</title>
+    <title>About Us | 100Solutionz AI & Innovation</title>
+    <meta name="description"
+        content="Learn about 100Solutionz, a partner in your growth specializing in AI, Machine Learning, and High-Scale Development.">
+    <meta property="og:title" content="About Us | 100Solutionz AI & Innovation">
+    <meta property="og:description"
+        content="We specialize in building the infrastructure of tomorrow, leveraging AI and Machine Learning.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 
 <body>
@@ -33,34 +39,67 @@
     </header>
 
     <main>
-        <section id="about" class="section" style="padding-top: 150px;">
+        <section id="about" class="section" style="padding-top: 150px; padding-bottom: 50px;">
             <div class="container">
                 <h1 class="section-title">About Us</h1>
-                <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.2rem; opacity: 0.8;">
+                <div style="max-width: 800px; line-height: 1.8; font-size: 1.2rem; opacity: 0.8;">
                     <p style="margin-bottom: 30px;">
                         At <strong>100Solutionz</strong>, we are more than a digital agency; we are a partner in your
                         growth. We specialize in building the infrastructure of tomorrow, leveraging <strong>Artificial
                             Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>High-Scale
                             Development</strong> to solve today's most complex business challenges.
                     </p>
-                    <p style="margin-bottom: 40px;">
-                        Our mission is to empower innovative brands with the tools they need to lead their industry.
-                        From
-                        custom-trained AI chatbots to data-driven digital marketing campaigns, we provide end-to-end
-                        tech solutions that drive measurable ROI.
-                    </p>
-                    <div class="services-grid" style="margin-top: 80px;">
-                        <div class="service-card"
-                            style="padding: 40px; border-radius: 12px; background: var(--card-bg);">
-                            <h3 style="margin-bottom: 15px; color: var(--accent-color);">Integrity</h3>
-                            <p style="font-size: 1rem;">We build transparent relationships and deliver on every promise
-                                with precision and honesty.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section">
+            <div class="container">
+                <div class="brand-header">
+                    <h2>Top-notch <span>clients</span></h2>
+                    <p>We partner with brands who share our values, do some good, and are ready to shake things up.</p>
+                </div>
+                <div class="logo-grid">
+                    <div class="logo-item">ThoughtSpot</div>
+                    <div class="logo-item" style="font-family: serif;">Roche</div>
+                    <div class="logo-item">Genentech</div>
+                    <div class="logo-item">VISA</div>
+                    <div class="logo-item">FOUR SEASONS</div>
+                    <div class="logo-item">NETFLIX</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section">
+            <div class="container">
+                <div class="split-section">
+                    <div class="split-header">
+                        <span class="sub-label">Go hard or go home</span>
+                        <h2>Driven</h2>
+                    </div>
+                    <div class="split-content">
+                        <p>We are in it for results that count. So we speculate over every idea, reach for the best
+                            possible solution, and never settle for "good enough."</p>
+                        <div
+                            style="margin-top: 40px; width: 100px; height: 100px; background: var(--accent-alt); clip-path: polygon(50% 0%, 0% 100%, 100% 100%);">
                         </div>
-                        <div class="service-card"
-                            style="padding: 40px; border-radius: 12px; background: var(--card-bg);">
-                            <h3 style="margin-bottom: 15px; color: var(--accent-alt);">Innovation</h3>
-                            <p style="font-size: 1rem;">We stay at the bleeding edge of technology to ensure our clients
-                                are always ahead of the curve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section" style="padding-bottom: 150px;">
+            <div class="container">
+                <div class="split-section" style="border: none; padding-top: 0;">
+                    <div class="split-header">
+                        <h2>Trusted and <span>certified</span></h2>
+                    </div>
+                    <div class="split-content">
+                        <p>Respected by our peers and validated by the people who matter.</p>
+                        <div class="badge-grid">
+                            <div class="badge-item">GREEN</div>
+                            <div class="badge-item">WPO</div>
+                            <div class="badge-item">SBA</div>
                         </div>
                     </div>
                 </div>
@@ -75,12 +114,21 @@
                 <a href="contact.html" class="btn-large">Get in Touch</a>
             </div>
             <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/100solutionzz/" target="_blank" class="social-icon"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
                 <p>&copy; 2026 100Solutionz. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="config.js"></script>
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 
 </html>
